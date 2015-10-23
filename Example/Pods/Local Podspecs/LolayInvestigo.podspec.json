@@ -1,6 +1,6 @@
 {
   "name": "LolayInvestigo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "Tracking Library for Flurry, Omniture, Segment.IO, etc.",
   "homepage": "https://github.com/Lolay/Investigo",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/TheClimateCorporation/investigo.git",
-    "tag": "1.0.1"
+    "tag": "1.0.2"
   },
   "source_files": [
     "LolayInvestigo/LolayInvestigo.h",

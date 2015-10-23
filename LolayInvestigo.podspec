@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name              = 'LolayInvestigo'
-    s.version           = '1.0.1'
+    s.version           = '1.0.2'
     s.summary           = 'Tracking Library for Flurry, Omniture, Segment.IO, etc.'
     s.homepage          = 'https://github.com/Lolay/Investigo'
     s.license           = { :type => 'Apache', :file => 'LICENSE' }
