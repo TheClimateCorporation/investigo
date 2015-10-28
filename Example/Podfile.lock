@@ -4,7 +4,7 @@ PODS:
   - Analytics/Segmentio (2.0.15):
     - Analytics/Core-iOS
   - Flurry-iOS-SDK/FlurrySDK (7.2.1)
-  - LolayInvestigo (1.0.2):
+  - LolayInvestigo (1.0.3):
     - Analytics/Segmentio (~> 2.0)
     - Flurry-iOS-SDK/FlurrySDK (~> 7.0)
   - OCMock (3.2)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Analytics: 06433a3f5a7932bb819ef2595471ce5ad03742df
   Flurry-iOS-SDK: 014d366cad101f05d4e8c191c0e0c0871d5704f7
-  LolayInvestigo: 63013b1729d1b5b2328e73f6bba64dc1165d1a68
+  LolayInvestigo: deb5a80caffbc60278e76090da9e22aec2700bf6
   OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
   TRVSDictionaryWithCaseInsensitivity: 51d2ccf52c6d645d27b63467a98fa02c556e01b0
 
