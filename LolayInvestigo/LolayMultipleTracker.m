@@ -153,26 +153,34 @@
 }
 
 - (void) logEvent:(NSString*) name {
+    NSDictionary * mergedParameters = [self parametersWithSystemParameters: @{}];
+
     for (id<LolayTracker> tracker in self.trackers) {
-        [tracker logEvent:name];
+        [tracker logEvent:name withDictionary: mergedParameters];
     }
 }
 
 - (void) logEvent:(NSString*) name withDictionary:(NSDictionary*) parameters {
+    NSDictionary * mergedParameters = [self parametersWithSystemParameters: parameters];
+
     for (id<LolayTracker> tracker in self.trackers) {
-        [tracker logEvent:name withDictionary:parameters];
+        [tracker logEvent:name withDictionary: mergedParameters];
     }
 }
 
 - (void) logPage:(NSString*) name {
+    NSDictionary * mergedParameters = [self parametersWithSystemParameters: @{}];
+
     for (id<LolayTracker> tracker in self.trackers) {
-        [tracker logPage:name];
+        [tracker logPage:name withDictionary: mergedParameters];
     }
 }
 
 - (void) logPage:(NSString*) name withDictionary:(NSDictionary*) parameters {
+    NSDictionary * mergedParameters = [self parametersWithSystemParameters: parameters];
+
     for (id<LolayTracker> tracker in self.trackers) {
-        [tracker logPage:name withDictionary:parameters];
+        [tracker logPage:name withDictionary: mergedParameters];
     }
 }
 
@@ -202,6 +210,14 @@
 		}
     }
 	return nil;
+}
+
+- (NSDictionary *) parametersWithSystemParameters: (NSDictionary * ) parameters {
+    NSMutableDictionary * mergedParameters = [[NSMutableDictionary alloc] initWithDictionary: parameters];
+
+    mergedParameters[@"client_event_id"] = [[NSUUID UUID] UUIDString];
+
+    return mergedParameters;
 }
 
 @end
